@@ -6,7 +6,7 @@ host = "localhost"
 db = "login_alchemy"
 user = "root"
 password = "Mysql202300!"
-port = 3306
+port = 3306 #ou a específica do servidor
 connection = f"mysql+pymysql://{user}:{password}@{host}:{port}/{db}"
 engine = create_engine(connection, echo=False)
 Session = sessionmaker(bind=engine)
